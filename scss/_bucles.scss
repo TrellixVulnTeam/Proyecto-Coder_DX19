@@ -1,0 +1,31 @@
+@each $m in 10px, 20px, 30px, 40px, 50px{
+	.mt#{$m}{
+		margin-top: $m;
+	}
+	.mb#{$m}{
+		margin-bottom: $m;
+	}
+}
+
+
+@each $fW, $v in $fontW{
+	.type#{$fW}{
+		font-weight: $v;
+	}
+}
+@each $fC, $v in $fontC{
+	.fontColor#{$fC}{
+		color: $v;
+	}
+}
+
+@each $bgC, $v in $bgColor{
+	.bg#{$bgC}{
+		background-color: $v;
+	}
+}
+@each $bgG, $v in $bgGradient{
+	.bg#{$bgG}{
+		background: $v;
+	}
+}

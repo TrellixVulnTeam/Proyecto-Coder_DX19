@@ -520,9 +520,14 @@ button{
 	ul{
 		li{
 			list-style: none;
+			transition: all 250ms;
+			&:hover{
+				transform: scale(1.1);
+			}
 			a{
 				color: #f0cccc;
 				text-decoration: none;
+
 			}
 		}
 	} 

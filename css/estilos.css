@@ -460,7 +460,10 @@ button:hover {
   padding: 35px 0 20px 20px;
   background-color: #1e1111; }
   #footer ul li {
-    list-style: none; }
+    list-style: none;
+    transition: all 250ms; }
+    #footer ul li:hover {
+      transform: scale(1.1); }
     #footer ul li a {
       color: #f0cccc;
       text-decoration: none; }

@@ -55,7 +55,7 @@ body{
 	font-size: 22px !important;
 }
 .navbar-light .navbar-nav .nav-link{
-	color: rgb(37, 42, 48);
+	color: #252a30;
 }
 .navbar-brand{
 	margin-right: 0px;
@@ -574,7 +574,20 @@ dl, ol, ul{
 			font-size: 1rem !important;
 		}
 	}
-
+	.contenedor{
+		.titulo{
+			font-size: 50px;
+		}
+		.nosotros__texto.nosotros__texto--text{
+			font-size: 0.7rem !important;
+		}
+		.nosotros__texto.nosotros__texto--title{
+			font-size: 1rem !important;
+		}
+	}
+	.contenedorImg img{
+		max-width: 325px
+	}
 	.redes{
 		width: 45%;
 	}
@@ -595,15 +608,31 @@ dl, ol, ul{
 			font-size: 1rem !important;
 		}
 	}
-
+	.contenedor{
+		.titulo{
+			font-size: 65px;
+		}
+		.nosotros__texto.nosotros__texto--text{
+			font-size: 0.8rem !important;
+		}
+		.nosotros__texto.nosotros__texto--title{
+			font-size: 1rem !important;
+		}
+	}
 	.redes{
 		width: 74%;
+	}
+	.contenedorImg img{
+		max-width: 425px
 	}
 }
 
 @media all and (max-width: 768px){
 	.contenedor{
 		margin: 10px;
+		.titulo{
+			padding: 25px 25px 0px 25px;
+		}
 	}
 }
 

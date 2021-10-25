@@ -105,6 +105,9 @@ body {
   padding-right: 510px !important;
   font-size: 22px !important; }
 
+.navbar-light .navbar-nav .nav-link {
+  color: #252a30; }
+
 .navbar-brand {
   margin-right: 0px;
   transition: all 250ms; }

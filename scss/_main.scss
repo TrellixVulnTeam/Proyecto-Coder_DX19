@@ -177,6 +177,7 @@ main div a img{
 				font-size: 18px;
 				padding-left: 10%;
 				padding-right: 10%;
+				padding: 0 10% 20px 10%;
 			}
 		}
 		.localesGrid{
@@ -686,13 +687,6 @@ dl, ol, ul{
 	grid-row-start: 4;
 	grid-row-end: 5;
 	align-self: center;
-	transition: all 250ms;
-		a{
-			color: #f0cccc;
-		}
-		&:hover{
-			transform: scale(1.1);
-		}
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -708,6 +702,9 @@ dl, ol, ul{
 	border: 3px solid #f0cccc;
 	transition: all 250ms cubic-bezier(.65,.05,.36,1);
 	height: 100%;
+		&:hover{
+		transform: scale(1.1);
+		}
 	}
 }
 

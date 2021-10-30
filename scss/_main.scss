@@ -639,10 +639,10 @@ dl, ol, ul{
 		}
 	}
 
-		.menuGrid{
+	/*.menuGrid{
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: repeat(3, 2fr);
-	/*grid-template-areas:
+	grid-template-areas:
 	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
 	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
 	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
@@ -650,10 +650,10 @@ dl, ol, ul{
 	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
 	". . . . comidas comidas comidas comidas comidas comidas"
 	". . . . comidas comidas comidas comidas comidas comidas"
-	;*/
+	;
 	min-height: 100vh;
 	padding: 0px 0px 0px 0px;
-	}
+	}*/
 	
 	.localesGrid{
 	display: grid;
@@ -705,6 +705,15 @@ dl, ol, ul{
 		&:hover{
 		transform: scale(1.1);
 		}
+	}
+	#footer{
+		padding: 20px 0 20px 20px;
+			.footerButtons ul li{
+				padding: 3px 0px 3px 0px;
+			}
+			.redes{
+				padding-top: 12px;
+			}
 	}
 }
 

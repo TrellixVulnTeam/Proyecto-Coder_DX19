@@ -204,154 +204,132 @@ main div a img{
 
 
 /*Grid Menu*/
-.menuGrid{
+.seleccionMenuGrid{
 	display: grid;
-	grid-template-columns: repeat(10, 1fr);
-	grid-template-rows: repeat(7, 2fr);
-	grid-template-areas:
-	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
-	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
-	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
-	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
-	"seleccion seleccion seleccion . comidas comidas comidas comidas comidas comidas"
-	". . . . comidas comidas comidas comidas comidas comidas"
-	". . . . comidas comidas comidas comidas comidas comidas"
-	;
-	min-height: 100vh;
-	padding: 0px 50px 50px 50px;
-}
-
-.item1{
-	grid-area: seleccion;
-	display: grid;
-	grid-template-columns: repeat(1, 10fr);
-	grid-template-rows: repeat(5, 1fr);
-	grid-template-areas:
-	"selBut1"
-	"selBut2"
-	"selBut3"
-	"selBut4"
-	"selBut5"
-	;
+	grid-template-columns: repeat(5, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	min-height: 65px;
+	margin: -15px 50px 0px 50px;
+	background-color: #a45d5d;
+	border: $border2px;
+	border-radius: 10px;
+	justify-items: center;
 	align-items: center;
-	min-height: 100%;
-	grid-row-gap: 20px;
-	background-color: #7b3737;
-	border: 2px solid black;
-	border-radius: 5px;
-	padding:20px;
-	text-align: center;
-		a{
-			text-decoration: none;
-			color: black;
-		}
-}
-.item1_a{
-	grid-area: selBut1;
-	padding: 20px;
-	background-color: $whiteMenu;
-	border: $border2px;
-	transition: all 250ms;
+	a{
+		color: #252a30;
+		text-decoration: none;
+		transition: all 250ms;
 		&:hover{
-			transform: scale(1.1);
-			background-color: white;
-		}
-}
-.item1_b{
-	grid-area: selBut2;
-	padding: 20px;
-	background-color: $whiteMenu;
-	border: $border2px;
-	transition: all 250ms;
-		&:hover{
-			transform: scale(1.1);
-			background-color: white;
-		}
-}
-.item1_c{
-	grid-area: selBut3;
-	padding: 20px;
-	background-color: $whiteMenu;
-	border: $border2px;
-	transition: all 250ms;
-		&:hover{
-			transform: scale(1.1);
-			background-color: white;
-		}
-}
-.item1_d{
-	grid-area: selBut4;
-	padding: 20px;
-	background-color: $whiteMenu;
-	border: $border2px;
-	transition: all 250ms;
-		&:hover{
-			transform: scale(1.1);
-			background-color: white;
-		}
-}
-.item1_e{
-	grid-area: selBut5;
-	padding: 20px;
-	background-color: $whiteMenu;
-	border: $border2px;
-	transition: all 250ms;
-		&:hover{
-			transform: scale(1.1);
-			background-color: white;
-		}
-}
-
-.item2{
-	grid-area: comidas;
-	padding: 20px;
-	display: grid;
-	grid-template-columns: repeat(2, 5fr);
-	grid-template-rows: repeat(6, 2fr);
-	grid-template-areas: 
-	"burger1 burger2"
-	"burger1 burger2"
-	"burger3 burger4"
-	"burger3 burger4"
-	"burger5 burger6"
-	"burger5 burger6"
-	;
-	min-height: 100%;
-	grid-row-gap: 30px;
-	grid-column-gap: 30px;
-	background-color: #2d2c2b;
-	border: 2px solid black;
-	border-radius: 5px;
-	.item2__img{
-		background-size: cover;
-		background-position: center;
-		&.item2__img--a{
-			grid-area: burger1;
-			background-image: url(../media/burgerCheddar.jpg);
-		}
-		&.item2__img--b{
-			grid-area: burger2;
-			background-image: url(../media/burgerJamon.jpg);
-		}
-		&.item2__img--c{
-			grid-area: burger3;
-			background-image: url(../media/burgerAmericana.jpg);
-		}
-		&.item2__img--d{
-			grid-area: burger4;
-			background-image: url(../media/burgerVeggie.jpg);
-		}
-		&.item2__img--e{
-			grid-area: burger5;
-			background-image: url(../media/burgerBanada.jpg);
-		}
-		&.item2__img--f{
-			grid-area: burger6;
-			background-image: url(../media/burgerCriolla.jpg);
+			transform: scale(1.2);
 		}
 	}
 }
-
+.menuGrid{
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(12, 10fr);
+	height: 150vh;
+	padding: 0px 0px 0px 0px;
+	margin: 100px 50px 20px 50px;
+	background-color: #a45d5d;
+	.burger__img{
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+		margin: 1px;
+		&.burger__img--burger1{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 4;
+			background-image: url(../media/burgerCheddar.jpg);
+		}
+		&.burger__img--burger2{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 4;
+			background-image: url(../media/burgerAmericana.jpg);
+		}
+		&.burger__img--burger3{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 5;
+			grid-row-end: 8;
+			background-image: url(../media/burgerJamon.jpg);
+		}
+		&.burger__img--burger4{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 5;
+			grid-row-end: 8;
+			background-image: url(../media/burgerBanada.jpg);
+		}
+		&.burger__img--burger5{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 9;
+			grid-row-end: 13;
+			background-image: url(../media/burgerCriolla.jpg);
+		}
+		&.burger__img--burger6{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 9;
+			grid-row-end: 13;
+			background-image: url(../media/burgerVeggie.jpg);
+		}
+	}
+	.\.burger__nombre{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		/*&.\.burger__nombre--nombre5{
+			padding: 14.56665px 0px 14.56665px 0px;
+		}
+		&.\.burger__nombre--nombre6{
+			padding: 14.56665px 0px 14.56665px 0px;
+		}*/
+	}
+	.burger__nombre{
+		&.burger__nombre--nombre1{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 4;
+			grid-row-end: 5;
+		}
+		&.burger__nombre--nombre2{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 4;
+			grid-row-end: 5;
+		}
+		&.burger__nombre--nombre3{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 8;
+			grid-row-end: 9;
+		}
+		&.burger__nombre--nombre4{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 8;
+			grid-row-end: 9;
+		}
+		&.burger__nombre--nombre5{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 12;
+			grid-row-end: 13;
+		}
+		&.burger__nombre--nombre6{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 12;
+			grid-row-end: 13;
+		}
+	}
+}
 /**/
 
 

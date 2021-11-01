@@ -330,6 +330,48 @@ main div a img{
 			grid-row-end: 15;
 			background-image: url(../media/aquarius.jpg);
 		}
+		&.menu__img--beer1{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 1;
+			grid-row-end: 5;
+			background-image: url(../media/honey.jpg);
+		}
+		&.menu__img--beer2{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 1;
+			grid-row-end: 5;
+			background-image: url(../media/golden.jpg);
+		}
+		&.menu__img--beer3{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 6;
+			grid-row-end: 10;
+			background-image: url(../media/ipa.jpg);
+		}
+		&.menu__img--beer4{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 6;
+			grid-row-end: 10;
+			background-image: url(../media/apa.jpg);
+		}
+		&.menu__img--beer5{
+			grid-column-start: 1;
+			grid-column-end: 2;
+			grid-row-start: 11;
+			grid-row-end: 15;
+			background-image: url(../media/stout.jpg);
+		}
+		&.menu__img--beer6{
+			grid-column-start: 2;
+			grid-column-end: 3;
+			grid-row-start: 11;
+			grid-row-end: 15;
+			background-image: url(../media/redirish.jpg);
+		}
 
 	}
 	.menu__nombre{

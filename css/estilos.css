@@ -241,7 +241,7 @@ main div a img {
       transform: scale(1.1);
       color: white; }
 
-.menuGrid {
+.menuGrid15rows {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(15, 10fr);
@@ -253,83 +253,193 @@ main div a img {
   background-color: #a45d5d;
   border: 2px solid black;
   border-radius: 10px; }
-  .menuGrid .burger__img {
+  .menuGrid15rows .menu__img {
     background-position: center;
     background-repeat: no-repeat;
     margin: -15px;
-    border: 2px solid black; }
-    .menuGrid .burger__img.burger__img--burger1 {
+    border: 2px solid black;
+    transition: all 100ms; }
+    .menuGrid15rows .menu__img:hover {
+      transform: scale(1.01); }
+    .menuGrid15rows .menu__img.menu__img--burger1 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 1;
       grid-row-end: 5;
       background-image: url(../media/burgerCheddar.jpg); }
-    .menuGrid .burger__img.burger__img--burger2 {
+    .menuGrid15rows .menu__img.menu__img--burger2 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 1;
       grid-row-end: 5;
       background-image: url(../media/burgerAmericana.jpg); }
-    .menuGrid .burger__img.burger__img--burger3 {
+    .menuGrid15rows .menu__img.menu__img--burger3 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 6;
       grid-row-end: 10;
       background-image: url(../media/burgerJamon.jpg); }
-    .menuGrid .burger__img.burger__img--burger4 {
+    .menuGrid15rows .menu__img.menu__img--burger4 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 6;
       grid-row-end: 10;
       background-image: url(../media/burgerBanada.jpg); }
-    .menuGrid .burger__img.burger__img--burger5 {
+    .menuGrid15rows .menu__img.menu__img--burger5 {
       grid-column-start: 1;
       grid-column-end: 2;
       grid-row-start: 11;
       grid-row-end: 15;
       background-image: url(../media/burgerCriolla.jpg); }
-    .menuGrid .burger__img.burger__img--burger6 {
+    .menuGrid15rows .menu__img.menu__img--burger6 {
       grid-column-start: 2;
       grid-column-end: 3;
       grid-row-start: 11;
       grid-row-end: 15;
       background-image: url(../media/burgerVeggie.jpg); }
-  .menuGrid .\.burger__nombre {
+    .menuGrid15rows .menu__img.menu__img--bebida1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      background-image: url(../media/pepsi.jpg); }
+    .menuGrid15rows .menu__img.menu__img--bebida2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      background-image: url(../media/sprite.jpg); }
+    .menuGrid15rows .menu__img.menu__img--bebida3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      background-image: url(../media/fanta.jpg); }
+    .menuGrid15rows .menu__img.menu__img--bebida4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      background-image: url(../media/toros.jpg); }
+    .menuGrid15rows .menu__img.menu__img--bebida5 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 11;
+      grid-row-end: 15;
+      background-image: url(../media/aguagas.jpg); }
+    .menuGrid15rows .menu__img.menu__img--bebida6 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 11;
+      grid-row-end: 15;
+      background-image: url(../media/aquarius.jpg); }
+  .menuGrid15rows .menu__nombre {
     display: flex;
     justify-content: center;
     align-items: center;
     padding-bottom: 15px;
     font-size: 20px; }
-  .menuGrid .burger__nombre.burger__nombre--nombre1 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 5;
-    grid-row-end: 6; }
-  .menuGrid .burger__nombre.burger__nombre--nombre2 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 5;
-    grid-row-end: 6; }
-  .menuGrid .burger__nombre.burger__nombre--nombre3 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 10;
-    grid-row-end: 11; }
-  .menuGrid .burger__nombre.burger__nombre--nombre4 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 10;
-    grid-row-end: 11; }
-  .menuGrid .burger__nombre.burger__nombre--nombre5 {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 15;
-    grid-row-end: 16; }
-  .menuGrid .burger__nombre.burger__nombre--nombre6 {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 15;
-    grid-row-end: 16; }
+    .menuGrid15rows .menu__nombre.menu__nombre--burger1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .menuGrid15rows .menu__nombre.menu__nombre--burger2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .menuGrid15rows .menu__nombre.menu__nombre--burger3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 10;
+      grid-row-end: 11; }
+    .menuGrid15rows .menu__nombre.menu__nombre--burger4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 10;
+      grid-row-end: 11; }
+    .menuGrid15rows .menu__nombre.menu__nombre--burger5 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 15;
+      grid-row-end: 16; }
+    .menuGrid15rows .menu__nombre.menu__nombre--burger6 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 15;
+      grid-row-end: 16; }
+
+.menuGrid10rows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-row-gap: 0px;
+  grid-column-gap: 60px;
+  height: 155vh;
+  padding: 60px 60px 0px 60px;
+  margin: 45px 50px 50px 50px;
+  background-color: #a45d5d;
+  border: 2px solid black;
+  border-radius: 10px; }
+  .menuGrid10rows .menu__img {
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: -15px;
+    border: 2px solid black;
+    transition: all 100ms; }
+    .menuGrid10rows .menu__img:hover {
+      transform: scale(1.01); }
+    .menuGrid10rows .menu__img.menu__img--acomp1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      background-image: url(../media/papas.jpg); }
+    .menuGrid10rows .menu__img.menu__img--acomp2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      background-image: url(../media/papasCheddar.jpg); }
+    .menuGrid10rows .menu__img.menu__img--acomp3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      background-image: url(../media/aros.jpg); }
+    .menuGrid10rows .menu__img.menu__img--acomp4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      background-image: url(../media/nuggets.jpg); }
+  .menuGrid10rows .menu__nombre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+    font-size: 20px; }
+    .menuGrid10rows .menu__nombre.menu__nombre--acomp1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .menuGrid10rows .menu__nombre.menu__nombre--acomp2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 5;
+      grid-row-end: 6; }
+    .menuGrid10rows .menu__nombre.menu__nombre--acomp3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 10;
+      grid-row-end: 11; }
+    .menuGrid10rows .menu__nombre.menu__nombre--acomp4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 10;
+      grid-row-end: 11; }
 
 /**/
 /*Grid Locales*/

@@ -212,14 +212,13 @@ main div a img {
       font-size: 40px; }
     .contenedor .localesGrid .locales__texto.locales__texto--text {
       font-size: 15px; }
-
-.contenedorImg {
-  display: flex;
-  max-width: 100%;
-  justify-content: center; }
-  .contenedorImg img {
-    height: 100%;
-    border: 2px solid black; }
+  .contenedor .contenedorImg {
+    display: flex;
+    max-width: 100%;
+    justify-content: center; }
+    .contenedor .contenedorImg img {
+      height: 100%;
+      border: 2px solid black; }
 
 /*Grid Menu*/
 .seleccionMenuGrid {
@@ -618,7 +617,8 @@ button:hover {
       text-decoration: none; }
 
 .redes {
-  width: 84%; }
+  width: 84%;
+  margin-left: 530px; }
   .redes .redesList {
     display: flex;
     justify-content: right; }
@@ -1132,4 +1132,5 @@ dl, ol, ul {
     #footer .footerButtons ul li {
       padding: 3px 0px 3px 0px; }
     #footer .redes {
-      padding-top: 12px; } }
+      padding-top: 12px;
+      margin-left: 0px; } }

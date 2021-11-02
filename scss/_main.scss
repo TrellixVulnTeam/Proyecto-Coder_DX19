@@ -35,7 +35,6 @@ p{
 	background-size: cover;
 	background-position: center;
 }
-
 .bl{
 	border-left: $border2px;
 }
@@ -48,9 +47,7 @@ p{
 .bb{
 	border-bottom: $border2px;
 }
-
 /*Header*/
-
 .navbar-expand-lg .navbar-collapse{
 	justify-content: right !important;
 	padding-right: 510px !important;
@@ -66,7 +63,6 @@ p{
 		transform: scale(1.05);
 		}
 }
-
 nav{
 	padding-left: 100px !important;
 		a img{
@@ -84,12 +80,9 @@ nav{
 				}
 			}
 		}
-
 }
-
 /**/
 /*Main*/
-
 #main{
 	flex-grow: 1;
 	min-height: 100vh;
@@ -142,7 +135,6 @@ main div a img{
 			}
 		}
 }
-
 .contenedor{
 	display: flex;
 	flex-direction: column;
@@ -191,17 +183,16 @@ main div a img{
 				}
 			}
 		}
-}
-.contenedorImg{
-	display: flex;
-	max-width: 100%;
-	justify-content: center;
-		img{
-			height: 100%;
-			border: $border2px;
+		.contenedorImg{
+			display: flex;
+			max-width: 100%;
+			justify-content: center;
+				img{
+					height: 100%;
+					border: $border2px;
+				}
 		}
 }
-
 
 /*Grid Menu*/
 .seleccionMenuGrid{
@@ -373,7 +364,6 @@ main div a img{
 			grid-row-end: 15;
 			background-image: url(../media/redirish.jpg);
 		}
-
 	}
 	.menu__nombre{
 		display: flex;
@@ -502,11 +492,7 @@ main div a img{
 		}
 	}
 }
-
-
 /**/
-
-
 /*Grid Locales*/
 .localesGrid{
 	display: grid;
@@ -568,11 +554,8 @@ main div a img{
 
 	}
 }
-
-
 /**/
 /*Contacto*/
-
 .formulario{
 	margin: 0 auto;
 	margin-bottom: 100px;
@@ -633,9 +616,7 @@ main div a img{
 	}
 }
 /**/
-
 /*Preguntas Frecuentes*/
-
 .accordion{
 	padding-left: 40px;
 	padding-right: 40px;
@@ -646,7 +627,6 @@ main div a img{
 .card-body{
 	color: #fff;
 }
-
 button{
 	&:focus:not(:focus-visible){
 	box-shadow: none;
@@ -655,7 +635,6 @@ button{
 	color: red;
 	}
 }
-
 .btn-link{
 	color: #2d2a2a;
 	&:hover, &:focus{
@@ -663,14 +642,9 @@ button{
 		text-decoration: none;
 		font-weight: 500;
 	}
-
 }
-
-
 /**/
-
 /*Footer*/
-
 #footer{
 	display: flex;
 	padding: 35px 0 20px 20px;
@@ -685,13 +659,13 @@ button{
 			a{
 				color: #f0cccc;
 				text-decoration: none;
-
 			}
 		}
 	} 
 }
 .redes{
 	width: 84%;
+	margin-left: 530px;
 	.redesList{
 	display: flex;
 	justify-content: right;
@@ -704,16 +678,10 @@ button{
 		width: 35px;
 	}
 }
-
-
-
 dl, ol, ul{
 	margin-bottom: 0rem;
 }
-
-
 /**/
-
 @media all and (max-width: 576px){
 	header nav.navbar div#navbarNav ul.navbar-nav li.nav-item a.nav-link{
 		font-size: 1rem;
@@ -721,7 +689,6 @@ dl, ol, ul{
 	.navbar-expand-lg .navbar-collapse{
 		padding-left: 23px !important;
 	}
-
 	.noticias{
 		.noticia__texto.noticia__texto--text{
 			font-size: 0.7rem !important;
@@ -918,19 +885,15 @@ dl, ol, ul{
 			}
 		}
 	}
-.formulario{
-	width: 95%;
-	.field{
-		width: 100%;
+	.formulario{
+		width: 95%;
+		.field{
+			width: 100%;
+		}
+		.btn{
+			width: 100%;
+		}
 	}
-	.btn{
-		width: 100%;
-	}
-}
-
-
-
-
 }
 	.redes{
 		width: 45%;
@@ -942,8 +905,6 @@ dl, ol, ul{
 	.navbar-expand-lg .navbar-collapse{
 	padding-left: 17px !important;
 	}
-
-
 	.contenedor{
 		.titulo{
 			font-size: 65px;
@@ -977,10 +938,7 @@ dl, ol, ul{
 	.redes{
 		width: 74%;
 	}
-
 }
-
-
 @media all and (max-width: 768px){
 	.contenedor{
 		margin: 10px;
@@ -1345,6 +1303,7 @@ dl, ol, ul{
 			}
 			.redes{
 				padding-top: 12px;
+				margin-left: 0px;
 			}
 	}
 }

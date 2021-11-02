@@ -256,6 +256,7 @@ main div a img {
   .menuGrid15rows .menu__img {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     margin: -15px;
     border: 2px solid black;
     transition: all 100ms; }
@@ -421,6 +422,7 @@ main div a img {
   .menuGrid10rows .menu__img {
     background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     margin: -15px;
     border: 2px solid black;
     transition: all 100ms; }
@@ -647,13 +649,6 @@ dl, ol, ul {
     font-size: 1rem !important; }
   .contenedor .contenedorImg img {
     max-width: 325px; }
-  .contenedor .seleccionMenuGrid {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    margin: 0px 0px 20px 0px;
-    width: 100%; }
-    .contenedor .seleccionMenuGrid a {
-      padding: 10px 0px 10px 0px; }
   .contenedor .menuGrid10rows {
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
@@ -666,54 +661,150 @@ dl, ol, ul {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 1;
-        grid-row-end: 4; }
+        grid-row-end: 4;
+        background-image: url(../media/papas_mob.jpg); }
       .contenedor .menuGrid10rows .menu__img.menu__img--acomp2 {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 5;
-        grid-row-end: 8; }
+        grid-row-end: 8;
+        background-image: url(../media/papasCheddar_mob.jpg); }
       .contenedor .menuGrid10rows .menu__img.menu__img--acomp3 {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 9;
-        grid-row-end: 12; }
+        grid-row-end: 12;
+        background-image: url(../media/aros_mob.jpg); }
       .contenedor .menuGrid10rows .menu__img.menu__img--acomp4 {
         grid-column-start: 1;
         grid-column-end: 3;
         grid-row-start: 13;
-        grid-row-end: 16; }
-  .contenedor .menu__nombre.menu__nombre--acomp1 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 4;
-    grid-row-end: 5; }
-  .contenedor .menu__nombre.menu__nombre--acomp2 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 8;
-    grid-row-end: 9; }
-  .contenedor .menu__nombre.menu__nombre--acomp3 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 12;
-    grid-row-end: 13; }
-  .contenedor .menu__nombre.menu__nombre--acomp4 {
-    grid-column-start: 1;
-    grid-column-end: 3;
-    grid-row-start: 16;
-    grid-row-end: 17; }
+        grid-row-end: 16;
+        background-image: url(../media/nuggets_mob.jpg); }
   .contenedor .menuGrid15rows {
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(); }
-  .contenedor .formulario {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(30, 10fr);
+    height: 330vh;
+    padding: 60px 60px 0px 60px;
+    margin: 15px 5px 0px 5px; }
+    .contenedor .menuGrid15rows .menu__img.menu__img--burger1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      background-image: url(../media/burgerCheddar_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--burger2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      background-image: url(../media/burgerAmericana_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--burger3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 11;
+      grid-row-end: 15;
+      background-image: url(../media/burgerJamon_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--burger4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 16;
+      grid-row-end: 20;
+      background-image: url(../media/burgerBanada_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--burger5 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 21;
+      grid-row-end: 25;
+      background-image: url(../media/burgerCriolla_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--burger6 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 26;
+      grid-row-end: 30;
+      background-image: url(../media/burgerVeggie_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--bebida1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      background-image: url(../media/pepsi_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--bebida2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      background-image: url(../media/sprite_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--bebida3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 11;
+      grid-row-end: 15;
+      background-image: url(../media/fanta_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--bebida4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 16;
+      grid-row-end: 20;
+      background-image: url(../media/toros_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--bebida5 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 21;
+      grid-row-end: 25;
+      background-image: url(../media/aguagas_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--bebida6 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 26;
+      grid-row-end: 30;
+      background-image: url(../media/aquarius_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--beer1 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      background-image: url(../media/honey_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--beer2 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 6;
+      grid-row-end: 10;
+      background-image: url(../media/golden_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--beer3 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 11;
+      grid-row-end: 15;
+      background-image: url(../media/ipa_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--beer4 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 16;
+      grid-row-end: 20;
+      background-image: url(../media/apa_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--beer5 {
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 21;
+      grid-row-end: 25;
+      background-image: url(../media/stout_mob.jpg); }
+    .contenedor .menuGrid15rows .menu__img.menu__img--beer6 {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 26;
+      grid-row-end: 30;
+      background-image: url(../media/redirish_mob.jpg); }
+  .formulario {
     width: 95%; }
-    .contenedor .formulario .field {
+    .formulario .field {
       width: 100%; }
-    .contenedor .formulario .btn {
-      width: 100%; }
-  .redes {
-    width: 45%; } }
+    .formulario .btn {
+      width: 100%; } }
+
+.redes {
+  width: 45%; }
 
 @media all and (max-width: 768px) and (min-width: 577px) {
   header nav.navbar div#navbarNav ul.navbar-nav li.nav-item a.nav-link {
@@ -789,6 +880,253 @@ dl, ol, ul {
         height: 100%; }
         .contenedor .localesGrid .imagenLocal__img:hover {
           transform: scale(1.06); }
+    .contenedor .seleccionMenuGrid {
+      grid-template-columns: repeat(1, 1fr);
+      grid-template-rows: repeat(4, 1fr);
+      margin: 0px 0px 20px 0px;
+      width: 100%; }
+      .contenedor .seleccionMenuGrid a {
+        padding: 10px 0px 10px 0px; }
+    .contenedor .menuGrid10rows {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(20, 1fr);
+      margin: 0px 0px 0px 0px;
+      padding: 15px 5px 0px 5px;
+      height: 230vh; }
+      .contenedor .menuGrid10rows .menu__img {
+        margin: 0px; }
+        .contenedor .menuGrid10rows .menu__img.menu__img--acomp1 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 5; }
+        .contenedor .menuGrid10rows .menu__img.menu__img--acomp2 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 6;
+          grid-row-end: 10; }
+        .contenedor .menuGrid10rows .menu__img.menu__img--acomp3 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 11;
+          grid-row-end: 15; }
+        .contenedor .menuGrid10rows .menu__img.menu__img--acomp4 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 16;
+          grid-row-end: 20; }
+    .contenedor .menu__nombre {
+      text-align: center; }
+      .contenedor .menu__nombre.menu__nombre--acomp1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6; }
+      .contenedor .menu__nombre.menu__nombre--acomp2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 10;
+        grid-row-end: 11; }
+      .contenedor .menu__nombre.menu__nombre--acomp3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 15;
+        grid-row-end: 16; }
+      .contenedor .menu__nombre.menu__nombre--acomp4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 20;
+        grid-row-end: 21; }
+      .contenedor .menu__nombre.menu__nombre--bebida1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6; }
+      .contenedor .menu__nombre.menu__nombre--bebida2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 10;
+        grid-row-end: 11; }
+      .contenedor .menu__nombre.menu__nombre--bebida3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 15;
+        grid-row-end: 16; }
+      .contenedor .menu__nombre.menu__nombre--bebida4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 20;
+        grid-row-end: 21; }
+      .contenedor .menu__nombre.menu__nombre--bebida5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 25;
+        grid-row-end: 26; }
+      .contenedor .menu__nombre.menu__nombre--bebida6 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 30;
+        grid-row-end: 31; }
+      .contenedor .menu__nombre.menu__nombre--beer1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6; }
+      .contenedor .menu__nombre.menu__nombre--beer2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 10;
+        grid-row-end: 11; }
+      .contenedor .menu__nombre.menu__nombre--beer3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 15;
+        grid-row-end: 16; }
+      .contenedor .menu__nombre.menu__nombre--beer4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 20;
+        grid-row-end: 21; }
+      .contenedor .menu__nombre.menu__nombre--beer5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 25;
+        grid-row-end: 26; }
+      .contenedor .menu__nombre.menu__nombre--beer6 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 30;
+        grid-row-end: 31; }
+      .contenedor .menu__nombre.menu__nombre--burger1 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6; }
+      .contenedor .menu__nombre.menu__nombre--burger2 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 10;
+        grid-row-end: 11; }
+      .contenedor .menu__nombre.menu__nombre--burger3 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 15;
+        grid-row-end: 16; }
+      .contenedor .menu__nombre.menu__nombre--burger4 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 20;
+        grid-row-end: 21; }
+      .contenedor .menu__nombre.menu__nombre--burger5 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 25;
+        grid-row-end: 26; }
+      .contenedor .menu__nombre.menu__nombre--burger6 {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 30;
+        grid-row-end: 31; }
+    .contenedor .menuGrid15rows {
+      width: 100%;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(30, 1fr);
+      margin: 0px 0px 0px 0px;
+      padding: 15px 5px 0px 5px;
+      height: 330vh; }
+      .contenedor .menuGrid15rows .menu__img {
+        margin: 0px; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--burger1 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 5; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--burger2 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 6;
+          grid-row-end: 10; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--burger3 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 11;
+          grid-row-end: 15; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--burger4 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 16;
+          grid-row-end: 20; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--burger5 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 21;
+          grid-row-end: 25; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--burger6 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 26;
+          grid-row-end: 30; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--bebida1 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 5; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--bebida2 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 6;
+          grid-row-end: 10; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--bebida3 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 11;
+          grid-row-end: 15; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--bebida4 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 16;
+          grid-row-end: 20; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--bebida5 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 21;
+          grid-row-end: 25; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--bebida6 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 26;
+          grid-row-end: 30; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--beer1 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 1;
+          grid-row-end: 5; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--beer2 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 6;
+          grid-row-end: 10; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--beer3 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 11;
+          grid-row-end: 15; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--beer4 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 16;
+          grid-row-end: 20; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--beer5 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 21;
+          grid-row-end: 25; }
+        .contenedor .menuGrid15rows .menu__img.menu__img--beer6 {
+          grid-column-start: 1;
+          grid-column-end: 3;
+          grid-row-start: 26;
+          grid-row-end: 30; }
   #footer {
     padding: 20px 0 20px 20px; }
     #footer .footerButtons ul li {

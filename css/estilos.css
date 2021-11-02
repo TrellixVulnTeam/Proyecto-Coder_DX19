@@ -891,7 +891,7 @@ dl, ol, ul {
       width: 100%;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(20, 1fr);
-      margin: 0px 0px 0px 0px;
+      margin: 0px 0px 30px 0px;
       padding: 15px 5px 0px 5px;
       height: 230vh; }
       .contenedor .menuGrid10rows .menu__img {
@@ -1032,7 +1032,7 @@ dl, ol, ul {
       width: 100%;
       grid-template-columns: repeat(2, 1fr);
       grid-template-rows: repeat(30, 1fr);
-      margin: 0px 0px 0px 0px;
+      margin: 0px 0px 30px 0px;
       padding: 15px 5px 0px 5px;
       height: 330vh; }
       .contenedor .menuGrid15rows .menu__img {
